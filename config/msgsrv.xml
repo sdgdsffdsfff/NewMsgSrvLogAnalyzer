@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='GBK'?>
+<config>
+	<!-- timeout selector等待超时时间 -->
+	<selector timeout="100" />
+	<!-- host :[必填]MsgSrv的地址 port :[必填]MsgSrv连接端口号 appname :[必填]MsgSrv登录名 username 
+		:[必填]登录MsgSrv的用户名 password :[必填]登录MsgSrv的密码，改值需要yhbf加密 selector :[可选]MsgSrv连接器等待数据超时时间，单位ms，默认1000ms 
+		pulse :[可选]MsgSrv连接器空闲时间，单位ms, 默认：60000ms reconnect :[可选]MsgSrv尝试重连时间间隔，单位ms, 
+		默认：5000ms -->
+	<!-- name 连接的name，保持唯一 -->
+	<!-- host 连接的ip地址 -->
+	<!-- port 连接的端口 -->
+	<!-- appname 连接的appname -->
+	<!-- username 连接的username -->
+	<!-- password 连接的password -->
+	<!-- pulse 连接的心跳检测时间 -->
+	<!-- reconnect 连接的重连等待时间 -->
+	<!-- clear 重连是否清空发送队列 -->
+	<!-- ThreadEnabled 是否启动线程队列 -->
+	<msgsrv
+		name="MSLAServer"
+		host="192.168.0.250"
+		port="6004"
+		appname="MSLAServer"
+		username="MSLAUser"
+		password="s8w/rzSl6Lk="
+		pulse="60000"
+		reconnect="1000"
+		clear="true"
+		ThreadEnabled="true">
+
+		<!-- command 不配置时，用户可以自己独立处理消息 -->
+		<!-- name 反射调用的配置 对应协议的command字段 -->
+		<!-- class 需要反射的类名 -->
+		<!-- method 反射调用的类名 -->
+		<command
+			name="test"
+			class="com.nnk.msgsrv.client.CommandTest"
+			method="handler" />
+	</msgsrv>
+<!-- 	<msgsrv
+		name="MSLAAlarm"
+		host="113.105.94.42"
+		port="6040"
+		appname="MSLAAlarm"
+		username="MSLAAlarmUsr"
+		password="s8w/rzSl6Lk="
+		pulse="60000"
+		reconnect="1000"
+		clear="true"
+		ThreadEnabled="true">
+
+		command 不配置时，用户可以自己独立处理消息
+		name 反射调用的配置 对应协议的command字段
+		class 需要反射的类名
+		method 反射调用的类名
+		<command
+			name="test"
+			class="com.nnk.msgsrv.client.CommandTest"
+			method="handler" />
+	</msgsrv> -->
+</config>

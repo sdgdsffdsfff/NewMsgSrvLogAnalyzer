@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='GB2312'?>
+<server-conf>
+
+	<server-name>MSLAAlarm</server-name>
+	<app-name>MSLAAlarm</app-name>
+	<user>MSLAUser</user>
+	<pwd>MSLAPwd</pwd>
+	<enc-pwd>s8w/rzSl6Lk=</enc-pwd>
+
+	<host>192.168.0.250</host>
+	<port>6004</port>
+	<link-time>3000</link-time>
+	<selector-timeout>1000</selector-timeout>
+	<pulse-time>600000</pulse-time>
+
+	<apps>
+		<!-- name或者cmd为*则可以匹配任意，注意先后顺序 -->
+	</apps>
+
+</server-conf>

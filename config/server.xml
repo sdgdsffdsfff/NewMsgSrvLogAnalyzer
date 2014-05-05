@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<!-- path 表示订单路径 -->
+	<!-- content 表示此路径的名称 -->
+	<!-- stepSet 表示此路径经由哪些步骤构成,步骤的编号来自client.xml中的配置 -->
+	<!-- identifyStep 标识最终采用那个步骤的key作为标识key -->
+	<path name="query" KeyStepSet="3,4,5,6,7,8,13,14,15,16,17,18" identifyStep="3">
+		<!-- orderTree 用来构建stepSet组成的树形结构 -->
+		<!-- id 标识层级关系的唯一编号编号从 1 开始 -->
+		<!-- pid标识上层id的编号 -->
+		<!-- content该层的名称 -->
+		<!-- orderIndex该层的步骤编号，第一个参数是起始步骤，第二个参数是结束步骤 -->
+		<!-- alarm 超时报警，若此层超时则发送警报，参数单位(微秒) -->
+		<!-- <orderTree id="1" pid="0" content="" orderIndex="1,20" alarm="200" /> <orderTree id="2" pid="1" content="" orderIndex="1,2" alarm="200" /> <orderTree id="3" pid="1" content="" orderIndex="2,19" alarm="200" /> <orderTree id="4" pid="1" content="" orderIndex="19,20" alarm="200" /> -->
+		<orderTree id="5" pid="0" content="R * to Distributor;S Distributor to *" orderIndex="3,18" selfUseTime="3,18" alarm="200" />
+		<orderTree id="6" pid="5" content="M * to Distributor" orderIndex="3,4" selfUseTime="3,4" alarm="200" />
+		<orderTree id="7" pid="5" content="S * to Distributor;R Distributor to *" orderIndex="4,17" selfUseTime="4,17" alarm="200" />
+		<orderTree id="8" pid="5" content="M Distributor to *" orderIndex="17,18" selfUseTime="17,18" alarm="200" />
+
+		<orderTree id="9" pid="7" content="R Distributor to OrderVerify;S OrderVerify to Distributor" orderIndex="5,16" selfUseTime="5,16" alarm="200" />
+		<orderTree id="10" pid="9" content="M Distributor to OrderVerify" orderIndex="5,6" selfUseTime="5,6" alarm="200" />
+		<orderTree id="11" pid="9" content="S Distributor to OrderVerify;R OrderVerify to Distributor" orderIndex="6,15" selfUseTime="6,15" alarm="200" />
+		<orderTree id="12" pid="9" content="M OrderVerify to Distributor" orderIndex="15,16" selfUseTime="15,16" alarm="200" />
+
+		<orderTree id="13" pid="11" content="R OrderVerify to NewOrderReceiver;S OrderVerify to NewOrderReceiver" orderIndex="7,14" selfUseTime="7,14" alarm="200" />
+		<orderTree id="14" pid="13" content="M OrderVerify to NewOrderReceiver" orderIndex="7,8" selfUseTime="7,8" alarm="200" />
+		<orderTree id="15" pid="13" content="S OrderVerify to NewOrderReceiver;R OrderVerify to NewOrderReceiver" orderIndex="8,13" selfUseTime="8,13" alarm="200" />
+		<orderTree id="16" pid="13" content="M NewOrderReceiver to OrderVerify" orderIndex="13,14" selfUseTime="13,14" alarm="200" />
+
+	</path>
+
+	<path name="OrderReceiver" KeyStepSet="23,24,33,34,35,36,37,38,39,40,45,46,47,48,49,50,51,52,53,54" NoKeyStepSet="25,26,27,28,29,30,31,32,41,42,43,44" identifyStep="23">
+		
+		<orderTree id="5" pid="0" content="R * to Distributor;S Distributor to *" orderIndex="23,54" selfUseTime="23,54" alarm="200" />
+		<orderTree id="6" pid="5" content="M * to Distributor" orderIndex="23,24" selfUseTime="23,24" alarm="200" />
+		<orderTree id="7" pid="5" content="S * to Distributor;R Distributor to *" orderIndex="24,53" selfUseTime="24,53" alarm="200" />
+		<orderTree id="8" pid="5" content="M Distributor to *" orderIndex="53,54" selfUseTime="53,54" alarm="200" />
+
+		<orderTree id="9" pid="7" content="R Distributor to PhoneInfoSrv;S PhoneInfoSrv to Distributor" orderIndex="25,28" selfUseTime="25,28" alarm="200" />
+		<orderTree id="10" pid="9" content="M Distributor to PhoneInfoSrv" orderIndex="25,26" selfUseTime="25,26" alarm="200" />
+		<orderTree id="11" pid="9" content="S Distributor to PhoneInfoSrv;R PhoneInfoSrv to Distributor" orderIndex="26,27" selfUseTime="26,27" alarm="200" />
+		<orderTree id="12" pid="9" content="M PhoneInfoSrv to Distributor" orderIndex="27,28" selfUseTime="27,28" alarm="200" />
+		
+		<orderTree id="13" pid="7" content="R Distributor to CheckMobRepeatSrv;S CheckMobRepeatSrv to Distributor" orderIndex="29,32" selfUseTime="29,32" alarm="200" />
+		<orderTree id="14" pid="13" content="M Distributor to CheckMobRepeatSrv" orderIndex="29,30" selfUseTime="29,30" alarm="200" />
+		<orderTree id="15" pid="13" content="S Distributor to CheckMobRepeatSrv;R CheckMobRepeatSrv to Distributor" orderIndex="30,31" selfUseTime="30,31" alarm="200" />
+		<orderTree id="16" pid="13" content="M CheckMobRepeatSrv to Distributor" orderIndex="31,32" selfUseTime="31,32" alarm="200" />
+	
+		<orderTree id="17" pid="7" content="R Distributor to CheckOemOrderDup;S CheckOemOrderDup to Distributor" orderIndex="33,36" selfUseTime="33,36" alarm="200" />
+		<orderTree id="18" pid="17" content="M Distributor to CheckOemOrderDup" orderIndex="33,34" selfUseTime="33,34" alarm="200" />
+		<orderTree id="19" pid="17" content="S Distributor to CheckOemOrderDup;R CheckOemOrderDup to Distributor" orderIndex="34,35" selfUseTime="34,35" alarm="200" />
+		<orderTree id="20" pid="17" content="M CheckOemOrderDup to Distributor" orderIndex="35,36" selfUseTime="35,36" alarm="200" />
+
+		<orderTree id="21" pid="7" content="R Distributor to OrderVerify;S OrderVerify to Distributor" orderIndex="37,52" selfUseTime="37,52" alarm="200" />
+		<orderTree id="22" pid="21" content="M Distributor to OrderVerify" orderIndex="37,38" selfUseTime="37,38" alarm="200" />
+		<orderTree id="23" pid="21" content="S Distributor to OrderVerify;R OrderVerify to Distributor" orderIndex="38,51" selfUseTime="38,51" alarm="200" />
+		<orderTree id="24" pid="21" content="M OrderVerify to Distributor" orderIndex="51,52" selfUseTime="51,52" alarm="200" />
+
+		<orderTree id="25" pid="23" content="R OrderVerify to NewOrderReceiver;S NewOrderReceiver to OrderVerify" orderIndex="39,50" selfUseTime="39,50" alarm="200" />
+		<orderTree id="26" pid="25" content="M OrderVerify to NewOrderReceiver" orderIndex="39,40" selfUseTime="39,40" alarm="200" />
+		<orderTree id="27" pid="25" content="S OrderVerify to NewOrderReceiver;R NewOrderReceiver to OrderVerify" orderIndex="40,49" selfUseTime="40,49" alarm="200" />
+		<orderTree id="28" pid="25" content="M NewOrderReceiver to OrderVerify" orderIndex="49,50" selfUseTime="49,50" alarm="200" />
+
+		<orderTree id="29" pid="27" content="R OrderGenClt to OrderGenerator;S OrderGenerator to OrderGenClt" orderIndex="41,44" selfUseTime="41,44" alarm="200" />
+		<orderTree id="30" pid="29" content="M OrderGenClt to OrderGenerator" orderIndex="41,42" selfUseTime="41,42" alarm="200" />
+		<orderTree id="31" pid="29" content="S OrderGenClt to OrderGenerator;R OrderGenerator to OrderGenClt" orderIndex="42,43" selfUseTime="42,43" alarm="200" />
+		<orderTree id="32" pid="29" content="M OrderGenerator to OrderGenClt" orderIndex="43,44" selfUseTime="43,44" alarm="200" />
+
+		<orderTree id="33" pid="27" content="R OrderGenClt to MoneyManSrv;S OrderGenClt to MoneyManSrv" orderIndex="45,48" selfUseTime="45,48" alarm="200" />
+		<orderTree id="34" pid="33" content="M OrderGenClt to MoneyManSrv" orderIndex="45,46" selfUseTime="45,46" alarm="200" />
+		<orderTree id="35" pid="33" content="S OrderGenClt to MoneyManSrv;R OrderGenClt to MoneyManSrv" orderIndex="46,47" selfUseTime="46,47" alarm="200" />
+		<orderTree id="36" pid="33" content="M MoneyManSrv to OrderGenClt" orderIndex="47,48" selfUseTime="47,48" alarm="200" />
+		
+		<SelectableStepGroup steps ="55,56,57,58" before="40" last="41">
+			<orderTree id="37" pid="27" content="R NewOrderReceiver to NewMyCartDBSrv;S NewMyCartDBSrv to NewOrderReceiver" orderIndex="55,58" selfUseTime="55,55" alarm="200" />
+			<orderTree id="38" pid="37" content="M NewOrderReceiver to NewMyCartDBSrv" orderIndex="55,56" selfUseTime="55,56" alarm="200" />
+			<orderTree id="39" pid="37" content="S NewOrderReceiver to NewMyCartDBSrv;R NewMyCartDBSrv to NewOrderReceiver" orderIndex="56,57" selfUseTime="56,57" alarm="200" />
+			<orderTree id="40" pid="37" content="M NewMyCartDBSrv to NewOrderReceiver" orderIndex="57,58" selfUseTime="57,58" alarm="200" />
+		</SelectableStepGroup>
+		<SelectableStepGroup steps ="59,60,57,58" before="44" last="45">
+			<orderTree id="41" pid="27" content="R NewOrderReceiver to NewMyCartDBSrv;S NewMyCartDBSrv to NewOrderReceiver" orderIndex="59,58" selfUseTime="59,59" alarm="200" />
+			<orderTree id="42" pid="41" content="M NewOrderReceiver to NewMyCartDBSrv" orderIndex="59,60" selfUseTime="59,60" alarm="200" />
+			<orderTree id="43" pid="41" content="S NewOrderReceiver to NewMyCartDBSrv;R NewMyCartDBSrv to NewOrderReceiver" orderIndex="60,57" selfUseTime="60,57" alarm="200" />
+			<orderTree id="44" pid="41" content="M NewMyCartDBSrv to NewOrderReceiver" orderIndex="57,58" selfUseTime="57,58" alarm="200" />
+		</SelectableStepGroup>
+		<SelectableStepGroup steps ="61,62,57,58" before="48" last="49">
+			<orderTree id="45" pid="27" content="R NewOrderReceiver to NewMyCartDBSrv;S NewMyCartDBSrv to NewOrderReceiver" orderIndex="61,58" selfUseTime="61,61" alarm="200" />
+			<orderTree id="46" pid="45" content="M NewOrderReceiver to NewMyCartDBSrv" orderIndex="61,62" selfUseTime="61,62" alarm="200" />
+			<orderTree id="47" pid="45" content="S NewOrderReceiver to NewMyCartDBSrv;R NewMyCartDBSrv to NewOrderReceiver" orderIndex="62,57" selfUseTime="62,57" alarm="200" />
+			<orderTree id="48" pid="45" content="M NewMyCartDBSrv to NewOrderReceiver" orderIndex="57,58" selfUseTime="57,58" alarm="200" />
+		</SelectableStepGroup>
+	</path>
+	
+	<path name="handle" KeyStepSet="100,101" NoKeyStepSet="" identifyStep="100">
+		<PathGroup id="2.1" steps="102,103,104,105"/>
+		<PathGroup id="2.2" steps="110,111,112,113,114,115,116,117,118,119"/>
+	</path>
+</rules>

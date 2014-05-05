@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='GB2312'?>
+<server-conf>
+
+	<server-name>Server</server-name>
+	<app-name>MSLAServer</app-name>
+	<user>MSLAUser</user>
+	<pwd>MSLAPwd</pwd>
+	<enc-pwd>GET2//Fl6q5oPznKKTz5BA==</enc-pwd>
+
+	<host>192.168.0.250</host>
+	<port>9001</port>
+	<link-time>3000</link-time>
+	<selector-timeout>1000</selector-timeout>
+	<pulse-time>60000</pulse-time>
+
+	<apps>
+	</apps>
+
+</server-conf>

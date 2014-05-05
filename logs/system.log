@@ -1,0 +1,293 @@
+2014-05-05 15:51:28,738[INFO] [com.msgsrv.log.analyzer.config.SystemConfig:137] 
+============================================
+Client [client20_6004] 日志文件位置 [F:/MsgSrvLog/6004] 日志格式  [LogForMsgSrv6004T-%s.%s] 
+Client [client20_6006] 日志文件位置 [F:/MsgSrvLog/6006] 日志格式  [LogForMsgSrv6006T-%s.%s] 
+Client [client20_6020] 日志文件位置 [F:/MsgSrvLog/6020] 日志格式  [LogForMsgSrv6020T-%s.%s] 
+Client [client20_7020] 日志文件位置 [F:/MsgSrvLog/7020] 日志格式  [LogForMsgSrv7020T-%s.%s] 
+Client [client20_7021] 日志文件位置 [F:/MsgSrvLog/7021] 日志格式  [LogForMsgSrv7021T-%s.%s] 
+Client [client20_7022] 日志文件位置 [F:/MsgSrvLog/7022] 日志格式  [LogForMsgSrv7022T-%s.%s] 
+日志起始分析时间[20140127000000] 每次累计分析  [1分钟] 分析结果超时时间 [300000毫秒] 
+数据可存储方案[load] 
+是否启用报警系统[false] 
+分析超时时间报警[120] 
+超时报警检查频率[120] 
+============================================
+2014-05-05 15:51:28,940[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:120] 开始连接[MsgSrv][192.168.0.250:6004]
+2014-05-05 15:51:28,995[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:. HELO Wellcome to 007ka MsgSrv
+2014-05-05 15:51:28,996[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:. AppName MSLAServer
+2014-05-05 15:51:28,997[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:. AUTH 8831187
+2014-05-05 15:51:29,427[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:. User MSLAUser 0be0b47c0568f2df67bffa72877d9cde
+2014-05-05 15:51:29,428[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:. ACCESS GRANTED MSLAServer.54.e57d._P12253
+2014-05-05 15:51:29,428[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:180] 连接[MsgSrv][192.168.0.250:6004][成功]MsgSrv分配的完整APPNAME[MSLAServer.54.e57d._P12253]
+2014-05-05 15:52:00,379[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv6004T-20140127.139904]
+2014-05-05 15:52:28,960[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155228
+2014-05-05 15:52:28,962[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155228
+2014-05-05 15:53:28,953[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155328
+2014-05-05 15:53:28,955[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155328
+2014-05-05 15:54:28,948[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155428
+2014-05-05 15:54:28,950[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155428
+2014-05-05 15:55:28,946[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155528
+2014-05-05 15:55:28,947[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155528
+2014-05-05 15:56:28,946[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155628
+2014-05-05 15:56:28,947[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155628
+2014-05-05 15:56:56,879[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\6004\LogForMsgSrv6004T-20140127.139904]第[3]行，内容[20140127090552.029444:R Ip=172.27.7.167]开始进行分析
+2014-05-05 15:57:28,944[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155728
+2014-05-05 15:57:28,946[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155728
+2014-05-05 15:58:28,945[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155828
+2014-05-05 15:58:28,946[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155828
+2014-05-05 15:59:28,943[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505155928
+2014-05-05 15:59:28,944[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505155928
+2014-05-05 16:00:28,943[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160028
+2014-05-05 16:00:28,945[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160028
+2014-05-05 16:01:28,943[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160128
+2014-05-05 16:01:28,945[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160128
+2014-05-05 16:02:28,942[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160228
+2014-05-05 16:02:28,943[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160228
+2014-05-05 16:03:28,964[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160328
+2014-05-05 16:03:28,966[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160328
+2014-05-05 16:04:28,939[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160428
+2014-05-05 16:04:28,940[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160428
+2014-05-05 16:05:28,941[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160528
+2014-05-05 16:05:28,943[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160528
+2014-05-05 16:06:28,939[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160628
+2014-05-05 16:06:28,941[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160628
+2014-05-05 16:07:28,943[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160728
+2014-05-05 16:07:28,944[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160728
+2014-05-05 16:08:28,936[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160828
+2014-05-05 16:08:28,937[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160828
+2014-05-05 16:09:28,937[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505160928
+2014-05-05 16:09:28,938[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505160928
+2014-05-05 16:10:28,936[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161028
+2014-05-05 16:10:28,937[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161028
+2014-05-05 16:11:28,935[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161128
+2014-05-05 16:11:28,936[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161128
+2014-05-05 16:12:28,933[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161228
+2014-05-05 16:12:28,934[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161228
+2014-05-05 16:13:28,933[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161328
+2014-05-05 16:13:28,936[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161328
+2014-05-05 16:14:28,934[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161428
+2014-05-05 16:14:28,935[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161428
+2014-05-05 16:15:28,932[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161528
+2014-05-05 16:15:28,935[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161528
+2014-05-05 16:16:28,932[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161628
+2014-05-05 16:16:28,934[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161628
+2014-05-05 16:17:28,931[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161728
+2014-05-05 16:17:28,932[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161728
+2014-05-05 16:18:28,930[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161828
+2014-05-05 16:18:28,931[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161828
+2014-05-05 16:19:28,929[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505161928
+2014-05-05 16:19:28,930[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505161928
+2014-05-05 16:20:28,929[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162028
+2014-05-05 16:20:28,930[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162028
+2014-05-05 16:21:28,928[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162128
+2014-05-05 16:21:28,930[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162128
+2014-05-05 16:22:28,928[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162228
+2014-05-05 16:22:28,928[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162228
+2014-05-05 16:23:28,928[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162328
+2014-05-05 16:23:28,931[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162328
+2014-05-05 16:24:28,927[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162428
+2014-05-05 16:24:28,928[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162428
+2014-05-05 16:25:28,925[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162528
+2014-05-05 16:25:28,926[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162528
+2014-05-05 16:26:28,925[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162628
+2014-05-05 16:26:28,927[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162628
+2014-05-05 16:27:28,925[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162728
+2014-05-05 16:27:28,927[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162728
+2014-05-05 16:28:28,922[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162828
+2014-05-05 16:28:28,924[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162828
+2014-05-05 16:29:28,922[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505162928
+2014-05-05 16:29:28,923[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505162928
+2014-05-05 16:30:28,922[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163028
+2014-05-05 16:30:28,923[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163028
+2014-05-05 16:31:28,921[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163128
+2014-05-05 16:31:28,923[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163128
+2014-05-05 16:32:28,921[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163228
+2014-05-05 16:32:28,922[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163228
+2014-05-05 16:33:28,919[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163328
+2014-05-05 16:33:28,922[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163328
+2014-05-05 16:34:28,918[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163428
+2014-05-05 16:34:28,919[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163428
+2014-05-05 16:35:28,935[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163528
+2014-05-05 16:35:28,936[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163528
+2014-05-05 16:36:28,917[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163628
+2014-05-05 16:36:28,919[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163628
+2014-05-05 16:37:28,917[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163728
+2014-05-05 16:37:28,918[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163728
+2014-05-05 16:38:28,916[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163828
+2014-05-05 16:38:28,917[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163828
+2014-05-05 16:39:28,916[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505163928
+2014-05-05 16:39:28,917[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505163928
+2014-05-05 16:40:28,917[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164028
+2014-05-05 16:40:28,924[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164028
+2014-05-05 16:41:28,923[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164128
+2014-05-05 16:41:28,939[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164128
+2014-05-05 16:41:44,649[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv6006T-20140127.133129]
+2014-05-05 16:42:28,910[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164228
+2014-05-05 16:42:28,911[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164228
+2014-05-05 16:42:44,451[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\6006\LogForMsgSrv6006T-20140127.133129]第[3]行，内容[20140127093814.478129:S Ip=172.27.7.167]开始进行分析
+2014-05-05 16:43:28,910[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164328
+2014-05-05 16:43:28,911[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164328
+2014-05-05 16:44:28,910[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164428
+2014-05-05 16:44:28,911[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164428
+2014-05-05 16:45:28,909[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164528
+2014-05-05 16:45:28,911[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164528
+2014-05-05 16:46:28,968[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164628
+2014-05-05 16:46:29,078[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164628
+2014-05-05 16:47:28,906[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164728
+2014-05-05 16:47:28,908[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164728
+2014-05-05 16:48:28,905[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164828
+2014-05-05 16:48:28,907[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164828
+2014-05-05 16:49:28,905[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505164928
+2014-05-05 16:49:28,906[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505164928
+2014-05-05 16:50:28,908[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165028
+2014-05-05 16:50:28,910[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165028
+2014-05-05 16:51:28,905[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165128
+2014-05-05 16:51:28,906[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165128
+2014-05-05 16:52:28,903[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165228
+2014-05-05 16:52:28,904[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165228
+2014-05-05 16:53:28,912[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165328
+2014-05-05 16:53:28,913[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165328
+2014-05-05 16:54:28,903[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165428
+2014-05-05 16:54:28,904[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165428
+2014-05-05 16:55:28,941[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165528
+2014-05-05 16:55:28,942[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165528
+2014-05-05 16:55:33,755[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv6020T-20140127.156663]
+2014-05-05 16:55:33,774[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\6020\LogForMsgSrv6020T-20140127.156663]第[3]行，内容[20140127094001.735679:(R)CMBMobileClient.d.5db4.20MsgSrv6020->...20MsgSrv6020|CMBMobileServer Verify Succeed=Y&CoNo=100611&BillNo=0003538124&Amount=100&Date=20140127&MerchantPara=android&Msg=07551006112014012714212788900000001380&Signature=176|208|118|203|186|181|135|62|57|49|75|83|169|55|181|254|74|213|182|164|247|193|59|163|253|222|168|64|8|88|104|63|119|14|26|179|83|236|128|92|144|225|83|51|21|197|39|119|207|184|175|120|170|3|221|156|255|200|131|199|66|200|7|216||]开始进行分析
+2014-05-05 16:56:00,265[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv7020T-20140127.300517]
+2014-05-05 16:56:05,078[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\7020\LogForMsgSrv7020T-20140127.300517]第[3]行，内容[20140127093423.026258:������Ϣ!nWrightCount=90,nStrLen=90]开始进行分析
+2014-05-05 16:56:28,901[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165628
+2014-05-05 16:56:28,902[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165628
+2014-05-05 16:56:59,246[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv7021T-20140127.252636]
+2014-05-05 16:57:02,729[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\7021\LogForMsgSrv7021T-20140127.252636]第[3]行，内容[20140127093959.138375:(R)Distributor.9.332.ProgComp20_7021->...ProgComp20_7021|OrderVerify DisSlowInt  NA NA 1100000006 100000100000006 18627567537830753854 NA 30000 NA NA 28 NA NA 18627567537 20140127093926 NA 7.1390786799 2 NA NA NA NA NA NA NA NA 1 NA NA 0 BD5CE869C5B5A25571A8A451A59F7CA2|]开始进行分析
+2014-05-05 16:57:28,938[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165728
+2014-05-05 16:57:28,939[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165728
+2014-05-05 16:58:02,398[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv7022T-20140127.247898]
+2014-05-05 16:58:11,850[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\7022\LogForMsgSrv7022T-20140127.247898]第[3]行，内容[20140127093957.042381:�����ת����������!]开始进行分析
+2014-05-05 16:58:28,899[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165828
+2014-05-05 16:58:28,900[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165828
+2014-05-05 16:59:28,898[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505165928
+2014-05-05 16:59:28,899[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505165928
+2014-05-05 17:00:28,897[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.54.e57d._P12253 Pulse 20140505170028
+2014-05-05 17:00:28,899[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.54.e57d._P12253 Pulse 20140505170028
+2014-05-05 17:01:15,612[INFO] [com.msgsrv.log.analyzer.server.task.CacheClearTask:56] 开始执行缓存清理任务.....
+2014-05-05 17:01:18,674[ERROR] [com.msgsrv.log.analyzer.server.dao.DBManage:103] Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused: connect
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:271)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2771)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.msgsrv.log.analyzer.server.dao.DBManage.createConnection(DBManage.java:99)
+	at com.msgsrv.log.analyzer.server.dao.DBManage.getConnection(DBManage.java:77)
+	at com.msgsrv.log.analyzer.server.task.SqlCacheTask.run(SqlCacheTask.java:50)
+	at com.msgsrv2014-05-05 17:22:55,862[INFO] [com.msgsrv.log.analyzer.config.SystemConfig:137] 
+============================================
+Client [client20_6004] 日志文件位置 [F:/MsgSrvLog/6004] 日志格式  [LogForMsgSrv6004T-%s.%s] 
+Client [client20_6006] 日志文件位置 [F:/MsgSrvLog/6006] 日志格式  [LogForMsgSrv6006T-%s.%s] 
+Client [client20_6020] 日志文件位置 [F:/MsgSrvLog/6020] 日志格式  [LogForMsgSrv6020T-%s.%s] 
+Client [client20_7020] 日志文件位置 [F:/MsgSrvLog/7020] 日志格式  [LogForMsgSrv7020T-%s.%s] 
+Client [client20_7021] 日志文件位置 [F:/MsgSrvLog/7021] 日志格式  [LogForMsgSrv7021T-%s.%s] 
+Client [client20_7022] 日志文件位置 [F:/MsgSrvLog/7022] 日志格式  [LogForMsgSrv7022T-%s.%s] 
+日志起始分析时间[20140127000000] 每次累计分析  [1分钟] 分析结果超时时间 [300000毫秒] 
+数据可存储方案[load] 
+是否启用报警系统[false] 
+分析超时时间报警[120] 
+超时报警检查频率[120] 
+============================================
+2014-05-05 17:22:56,501[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:120] 开始连接[MsgSrv][192.168.0.250:6004]
+2014-05-05 17:22:56,530[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:. HELO Wellcome to 007ka MsgSrv
+2014-05-05 17:22:56,530[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:. AppName MSLAServer
+2014-05-05 17:22:56,533[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:. AUTH 2262440
+2014-05-05 17:22:56,606[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:. User MSLAUser c06841a64333c0c67f461f698ee81e0c
+2014-05-05 17:22:56,607[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:. ACCESS GRANTED MSLAServer.51.e9e9._P12253
+2014-05-05 17:22:56,607[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:180] 连接[MsgSrv][192.168.0.250:6004][成功]MsgSrv分配的完整APPNAME[MSLAServer.51.e9e9._P12253]
+2014-05-05 17:23:04,686[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv6004T-20140127.139904]
+2014-05-05 17:23:04,689[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\6004\LogForMsgSrv6004T-20140127.139904]第[3]行，内容[20140127090552.029444:R Ip=172.27.7.167]开始进行分析
+2014-05-05 17:23:10,897[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv6006T-20140127.133129]
+2014-05-05 17:23:10,899[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\6006\LogForMsgSrv6006T-20140127.133129]第[3]行，内容[20140127093814.478129:S Ip=172.27.7.167]开始进行分析
+2014-05-05 17:23:18,144[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv6020T-20140127.156663]
+2014-05-05 17:23:18,146[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\6020\LogForMsgSrv6020T-20140127.156663]第[3]行，内容[20140127094001.735679:(R)CMBMobileClient.d.5db4.20MsgSrv6020->...20MsgSrv6020|CMBMobileServer Verify Succeed=Y&CoNo=100611&BillNo=0003538124&Amount=100&Date=20140127&MerchantPara=android&Msg=07551006112014012714212788900000001380&Signature=176|208|118|203|186|181|135|62|57|49|75|83|169|55|181|254|74|213|182|164|247|193|59|163|253|222|168|64|8|88|104|63|119|14|26|179|83|236|128|92|144|225|83|51|21|197|39|119|207|184|175|120|170|3|221|156|255|200|131|199|66|200|7|216||]开始进行分析
+2014-05-05 17:23:32,304[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv7020T-20140127.300517]
+2014-05-05 17:23:32,306[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\7020\LogForMsgSrv7020T-20140127.300517]第[3]行，内容[20140127093423.026258:������Ϣ!nWrightCount=90,nStrLen=90]开始进行分析
+2014-05-05 17:23:44,360[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv7021T-20140127.252636]
+2014-05-05 17:23:44,362[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\7021\LogForMsgSrv7021T-20140127.252636]第[3]行，内容[20140127093959.138375:(R)Distributor.9.332.ProgComp20_7021->...ProgComp20_7021|OrderVerify DisSlowInt  NA NA 1100000006 100000100000006 18627567537830753854 NA 30000 NA NA 28 NA NA 18627567537 20140127093926 NA 7.1390786799 2 NA NA NA NA NA NA NA NA 1 NA NA 0 BD5CE869C5B5A25571A8A451A59F7CA2|]开始进行分析
+2014-05-05 17:23:56,240[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:216] 获取到初次读取文件[LogForMsgSrv7022T-20140127.247898]
+2014-05-05 17:23:56,243[INFO] [com.msgsrv.log.analyzer.client.task.AnalyzerLogFileTask:537] 初始化日志读取器完毕，从日志[F:\MsgSrvLog\7022\LogForMsgSrv7022T-20140127.247898]第[3]行，内容[20140127093957.042381:�����ת����������!]开始进行分析
+2014-05-05 17:23:56,531[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.51.e9e9._P12253 Pulse 20140505172356
+2014-05-05 17:23:56,539[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.51.e9e9._P12253 Pulse 20140505172356
+2014-05-05 17:24:56,518[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.51.e9e9._P12253 Pulse 20140505172456
+2014-05-05 17:24:56,520[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.51.e9e9._P12253 Pulse 20140505172456
+2014-05-05 17:25:56,517[INFO] [com.nnk.msgsrv.client.core.MsgSrvService:266] S:MSLAServer.51.e9e9._P12253 Pulse 20140505172556
+2014-05-05 17:25:56,519[INFO] [com.nnk.msgsrv.client.core.ParseMessageTask:74] R:MSLAServer.51.e9e9._P12253 Pulse 20140505172556
+2014-05-05 17:26:31,259[INFO] [com.msgsrv.log.analyzer.server.task.CacheClearTask:56] 开始执行缓存清理任务.....
+2014-05-05 17:26:51,571[ERROR] [com.msgsrv.log.analyzer.server.dao.DBManage:103] Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused: connect
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:271)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2771)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1555)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.msgsrv.log.analyzer.server.dao.DBManage.createConnection(DBManage.java:99)
+	at com.msgsrv.log.analyzer.server.dao.DBManage.getConnection(DBManage.java:77)
+	at com.msgsrv.log.analyzer.server.task.SqlCacheTask.run(SqlCacheTask.java:50)
+	at com.msgsrv.log.analyzer.Main.start(Main.java:102)
+	at com.msgsrv.log.analyzer.Main.main(Main.java:70)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 1 ms ago.
+com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.ConnectException
+MESSAGE: Connection refused: connect
+
+STACKTRACE:
+
+java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.co

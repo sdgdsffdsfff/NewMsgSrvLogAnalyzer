@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+	<!-- CCBServerSrh <rule step="1" dir="(R)" src="CCBServer" dst="Distributor" cmd="SlowInt"> <content contentType="fix-field"> <eigenvalue length="30" indexs="11" values="28" /> <keys> <key index="4,6" prefixs="key_1" /> </keys> </content> </rule> <rule step="2" dir="(S)" src="CCBServer" dst="Distributor" cmd="SlowInt"> <content contentType="fix-field"> <eigenvalue length="30" indexs="11" values="28" 
+		/> <keys> <key index="4,6" prefixs="key_1" /> </keys> </content> </rule> -->
+	<rule step="3" dir="(R)" src="*" dst="Distributor" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="30" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="4" dir="(S)" src="*" dst="Distributor" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="30" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+
+	<rule step="5" dir="(R)" src="Distributor" dst="OrderVerify" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="32" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="6" dir="(S)" src="Distributor" dst="OrderVerify" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="32" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+
+	<rule step="7" dir="(R)" src="OrderVerify" dst="NewOrderReceiver" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="31" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="8" dir="(S)" src="OrderVerify" dst="NewOrderReceiver" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="31" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<!-- <rule step="9" dir="(R)" src="OrderGenClt" dst="MoneyManSrv" cmd="MoneyManage"> <content contentType="fix-field"> <eigenvalue length="18" indexs="3" values="3" /> <keys> </keys> </content> </rule> <rule step="10" dir="(S)" src="OrderGenClt" dst="MoneyManSrv" cmd="MoneyManage"> <content contentType="fix-field"> <eigenvalue length="18" indexs="3" values="3" /> <keys> </keys> </content> </rule> 
+		<rule step="11" dir="(R)" src="MoneyManSrv" dst="OrderGenClt" cmd="MoneyManage"> <content contentType="fix-field"> <eigenvalue length="21" indexs="3" values="3" /> <keys> </keys> </content> </rule> <rule step="12" dir="(S)" src="MoneyManSrv" dst="OrderGenClt" cmd="MoneyManage"> <content contentType="fix-field"> <eigenvalue length="21" indexs="3" values="3" /> <keys> </keys> </content> </rule> -->
+	<rule step="13" dir="(R)" src="NewOrderReceiver" dst="OrderVerify" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="14" dir="(S)" src="NewOrderReceiver" dst="OrderVerify" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="15" dir="(R)" src="OrderVerify" dst="Distributor" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="34" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="16" dir="(S)" src="OrderVerify" dst="Distributor" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="34" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="17" dir="(R)" src="Distributor" dst="*" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="18" dir="(S)" src="Distributor" dst="*" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="28" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<!-- <rule step="19" dir="(R)" src="OrderReceiver" dst="CCBServer" cmd="SlowInt"> <content contentType="fix-field"> <eigenvalue length="33" indexs="11" values="28" /> <keys> <key index="4,6" prefixs="key_1" /> </keys> </content> </rule> <rule step="20" dir="(S)" src="OrderReceiver" dst="CCBServer" cmd="SlowInt"> <content contentType="fix-field"> <eigenvalue length="33" indexs="11" values="28" /> <keys> 
+		<key index="4,6" prefixs="key_1" /> </keys> </content> </rule> -->
+
+	<!-- 第二条路径 -->
+	<!-- <rule step="21" dir="(R)" src="CCBServer" dst="Distributor" cmd="SlowInt"> <content contentType="fix-field"> <eigenvalue length="30" indexs="11" values="9" /> <keys> <key index="4,6" prefixs="key_1" /> </keys> </content> </rule> <rule step="22" dir="(S)" src="CCBServer" dst="Distributor" cmd="SlowInt"> <content contentType="fix-field"> <eigenvalue length="30" indexs="11" values="9" /> <keys> 
+		<key index="4,6" prefixs="key_1" /> </keys> </content> </rule> -->
+	<rule step="23" dir="(R)" src="*" dst="Distributor" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="30" indexs="11" values="9" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+			<multi-keys>
+				<multi-key index="14"/>
+			</multi-keys>
+		</content>
+	</rule>
+	<rule step="24" dir="(S)" src="*" dst="Distributor" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="30" indexs="11" values="9" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+
+	<rule step="25" dir="(R)" src="Distributor" dst="PhoneInfoSrv" cmd="GetPhoneInfo">
+		<content contentType="fix-field">
+			<eigenvalue length="5" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="26" dir="(S)" src="Distributor" dst="PhoneInfoSrv" cmd="GetPhoneInfo">
+		<content contentType="fix-field">
+			<eigenvalue length="5" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="27" dir="(R)" src="PhoneInfoSrv" dst="Distributor" cmd="GetPhoneInfo">
+		<content contentType="fix-field">
+			<eigenvalue length="10" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="28" dir="(S)" src="PhoneInfoSrv" dst="Distributor" cmd="GetPhoneInfo">
+		<content contentType="fix-field">
+			<eigenvalue length="10" indexs="" values="" />
+		</content>
+	</rule>
+
+	<rule step="29" dir="(R)" src="Distributor" dst="CheckMobRepeatSrv" cmd="CheckMobRepeat">
+		<content contentType="fix-field">
+			<eigenvalue length="8" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="30" dir="(S)" src="Distributor" dst="CheckMobRepeatSrv" cmd="CheckMobRepeat">
+		<content contentType="fix-field">
+			<eigenvalue length="8" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="31" dir="(R)" src="CheckMobRepeatSrv" dst="Distributor" cmd="CheckMobRepeat">
+		<content contentType="fix-field">
+			<eigenvalue length="8" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="32" dir="(S)" src="CheckMobRepeatSrv" dst="Distributor" cmd="CheckMobRepeat">
+		<content contentType="fix-field">
+			<eigenvalue length="8" indexs="" values="" />
+		</content>
+	</rule>
+
+	<rule step="33" dir="(R)" src="Distributor" dst="CheckOemOrderDup" cmd="Verify">
+		<content contentType="fix-field">
+			<eigenvalue length="6" indexs="" values="" />
+			<keys>
+				<key index="4,5" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="34" dir="(S)" src="Distributor" dst="CheckOemOrderDup" cmd="Verify">
+		<content contentType="fix-field">
+			<eigenvalue length="6" indexs="" values="" />
+			<keys>
+				<key index="4,5" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="35" dir="(R)" src="CheckOemOrderDup" dst="Distributor" cmd="Verify">
+		<content contentType="fix-field">
+			<eigenvalue length="6" indexs="" values="" />
+			<keys>
+				<key index="4,5" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="36" dir="(S)" src="CheckOemOrderDup" dst="Distributor" cmd="Verify">
+		<content contentType="fix-field">
+			<eigenvalue length="6" indexs="" values="" />
+			<keys>
+				<key index="4,5" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="37" dir="(R)" src="Distributor" dst="OrderVerify" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="32" indexs="11" values="9" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="38" dir="(S)" src="Distributor" dst="OrderVerify" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="32" indexs="11" values="9" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="39" dir="(R)" src="OrderVerify" dst="NewOrderReceiver" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="31" indexs="11" values="9" />
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="40" dir="(S)" src="OrderVerify" dst="NewOrderReceiver" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="31" indexs="11" values="9" EigenValueIndex="4,6"/>
+			<keys>
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="41" dir="(R)" src="OrderGenClt" dst="OrderGenerator" cmd="Create">
+		<content contentType="fix-field">
+			<eigenvalue length="5" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="42" dir="(S)" src="OrderGenClt" dst="OrderGenerator" cmd="Create">
+		<content contentType="fix-field">
+			<eigenvalue length="5" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="43" dir="(R)" src="OrderGenerator" dst="OrderGenClt" cmd="Create">
+		<content contentType="fix-field">
+			<eigenvalue length="5" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="44" dir="(S)" src="OrderGenerator" dst="OrderGenClt" cmd="Create">
+		<content contentType="fix-field">
+			<eigenvalue length="5" indexs="" values="" />
+		</content>
+	</rule>
+	<rule step="45" dir="(R)" src="OrderGenClt" dst="MoneyManSrv" cmd="MoneyManage">
+		<content contentType="fix-field">
+			<eigenvalue length="18" indexs="3" values="2" />
+			<keys>
+				<key index="4,11" prefixs="key_1" />
+				<key index="12" prefixs="key_2" sub="12:sub(3)" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="46" dir="(S)" src="OrderGenClt" dst="MoneyManSrv" cmd="MoneyManage">
+		<content contentType="fix-field">
+			<eigenvalue length="18" indexs="3" values="2" />
+			<keys>
+				<key index="4,11" prefixs="key_1" />
+				<key index="12" prefixs="key_2" sub="12:sub(3)" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="47" dir="(R)" src="MoneyManSrv" dst="OrderGenClt" cmd="MoneyManage">
+		<content contentType="fix-field">
+			<eigenvalue length="21" indexs="3" values="2" />
+			<keys>
+				<key index="4,11" prefixs="key_1" />
+				<key index="12" prefixs="key_2" sub="12:sub(3)" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="48" dir="(S)" src="MoneyManSrv" dst="OrderGenClt" cmd="MoneyManage">
+		<content contentType="fix-field">
+			<eigenvalue length="21" indexs="3" values="2" />
+			<keys>
+				<key index="4,11" prefixs="key_1" />
+				<key index="12" prefixs="key_2" sub="12:sub(3)" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="49" dir="(R)" src="NewOrderReceiver" dst="OrderVerify" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="9" />
+			<keys>
+				<key index="3" prefixs="key_2" sub="3:sub(3)" />
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="50" dir="(S)" src="NewOrderReceiver" dst="OrderVerify" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="9" />
+			<keys>
+				<key index="3" prefixs="key_2" sub="3:sub(3)" />
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="51" dir="(R)" src="OrderVerify" dst="Distributor" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="34" indexs="11" values="9" />
+			<keys>
+				<key index="3" prefixs="key_2" sub="3:sub(3)" />
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="52" dir="(S)" src="OrderVerify" dst="Distributor" cmd="DisSlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="34" indexs="11" values="9" />
+			<keys>
+				<key index="3" prefixs="key_2" sub="3:sub(3)" />
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="53" dir="(R)" src="Distributor" dst="*" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="9" />
+			<keys>
+				<key index="3" prefixs="key_2" sub="3:sub(3)" />
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	<rule step="54" dir="(S)" src="Distributor" dst="*" cmd="SlowInt">
+		<content contentType="fix-field">
+			<eigenvalue length="33" indexs="11" values="9"/>
+			<keys>
+				<key index="3" prefixs="key_2" sub="3:sub(3)" />
+				<key index="4,6" prefixs="key_1" />
+			</keys>
+		</content>
+	</rule>
+	
+	<!-- 2014-02-24 新增对DBSrv的分析 -->
+	<rule step="55" dir="(R)" src="NewOrderReceiver" dst="NewMyCartDBSrv" cmd="NNKQuery">
+		<content contentType="DBSRV">
+			<eigenvalue match="select rettype,merid,meraccount,amount\*100,timeout,command,chargenum,cardtype,province,cardsn,cardkey,meruserid from oemcdkey_order where merid='(.+)' and orderid='(.+)' order by rettype desc limit 1.*" EigenValueIndex="1,2"/>
+		</content>
+	</rule>
+	<rule step="56" dir="(S)" src="NewOrderReceiver" dst="NewMyCartDBSrv" cmd="NNKQuery">
+		<content contentType="DBSRV">
+			<eigenvalue match="select rettype,merid,meraccount,amount\*100,timeout,command,chargenum,cardtype,province,cardsn,cardkey,meruserid from oemcdkey_order where merid='(.+)' and orderid='(.+)' order by rettype desc limit 1.*" EigenValueIndex="1,2"/>
+		</content>
+	</rule>
+	<rule step="57" dir="(R)" src="NewMyCartDBSrv" dst="NewOrderReceiver" cmd="NNKQueryHead">
+		<content contentType="DBSRV" >
+			<eigenvalue EigenValueIndex="4"/>
+		</content>
+	</rule>
+	<rule step="58" dir="(S)" src="NewMyCartDBSrv" dst="NewOrderReceiver" cmd="NNKQueryHead">
+		<content contentType="DBSRV" >
+			<eigenvalue EigenValueIndex="4"/>
+		</content>
+	</rule>
+	
+	<rule step="59" dir="(R)" src="NewOrderReceiver" dst="NewMyCartDBSrv" cmd="NNKQuery">
+		<content contentType="DBSRV">
+			<eigenvalue match="insert into oemcdkey_order[(]id,merid,meraccount,orderid,command,rettype,chargenum,amount,ordtime,recvtime,attach,checkdate,merurl,inorderid,timeout,endtime,cardtype,province,cardsn,cardkey,meruserid,isReq,retcode,dnote[)] values[(]null,'([0-9]{10})','[0-9]{15}','([^,]+)',.*" EigenValueIndex="1,2"/>
+		</content>
+	</rule>
+	<rule step="60" dir="(S)" src="NewOrderReceiver" dst="NewMyCartDBSrv" cmd="NNKQuery">
+		<content contentType="DBSRV">
+			<eigenvalue match="insert into oemcdkey_order[(]id,merid,meraccount,orderid,command,rettype,chargenum,amount,ordtime,recvtime,attach,checkdate,merurl,inorderid,timeout,endtime,cardtype,province,cardsn,cardkey,meruserid,isReq,retcode,dnote[)] values[(]null,'([0-9]{10})','[0-9]{15}','([^,]+)',.*" EigenValueIndex="1,2"/>
+		</content>
+	</rule>
+	
+	<rule step="61" dir="(R)" src="NewOrderReceiver" dst="NewMyCartDBSrv" cmd="NNKQuery">
+		<content contentType="DBSRV">
+			<eigenvalue match="update oemcdkey_order set.*where id=([0-9]+) limit 1.*" EigenValueIndex="1"/>
+		</content>
+	</rule>
+	<rule step="62" dir="(S)" src="NewOrderReceiver" dst="NewMyCartDBSrv" cmd="NNKQuery">
+		<content contentType="DBSRV">
+			<eigenvalue match="update oemcdkey_order set.*where id=([0-9]+) limit 1.*" EigenValueIndex="1"/>
+		</content>
+	</rule>
+	
+	
+	<!-- 处理耗时分析 -->
+	<!-- key_10 oemcdkey_order.id-->
+	<!-- key_11 007卡订单号 -->
+	<!-- key_12 Chargelist.id -->
+	<!-- key_13 oemid + omeOrder -->
+	<rule step="100" dir="(R)" src="OrderKeep" dst="Broker2" cmd="NewTask" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="6"/>
+			<keys>
+				<key index="2" prefixs="key_10"/>
+				<key index="3,4" prefixs="key_13"/>
+				<key index="5" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="101" dir="(S)" src="OrderKeep" dst="Broker2" cmd="NewTask" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="6"/>
+			<keys>
+				<key index="2" prefixs="key_10"/>
+				<key index="3,4" prefixs="key_13"/>
+				<key index="5" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="102" dir="(R)" src="Broker2" dst="IFTran" cmd="TranSlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="18" indexs="11" values="22" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="103" dir="(S)" src="Broker2" dst="IFTran" cmd="TranSlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="18" indexs="11" values="22" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="104" dir="(R)" src="IFTran" dst="Broker2" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="23" indexs="11" values="22" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="105" dir="(S)" src="IFTran" dst="Broker2" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="23" indexs="11" values="22" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	
+	<rule step="106" dir="(R)" src="IFTran" dst="CallBack" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="25" indexs="11" values="33" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="107" dir="(S)" src="IFTran" dst="CallBack" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="25" indexs="11" values="33" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	
+	<rule step="108" dir="(R)" src="CallBack" dst="IFTran" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="25" indexs="11" values="33" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="109" dir="(S)" src="CallBack" dst="IFTran" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="25" indexs="11" values="33" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	
+	
+	
+	<rule step="110" dir="(R)" src="Broker2" dst="SchMaster" cmd="NewTask" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="5"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+				<key index="3" prefixs="key_11"/>
+				<key index="4" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="111" dir="(S)" src="Broker2" dst="SchMaster" cmd="NewTask" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="5"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+				<key index="3" prefixs="key_11"/>
+				<key index="4" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	
+	<rule step="112" dir="(R)" src="SchMaster" dst="MsgDispatcher" cmd="TaskFin" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="4"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+				<key index="3" prefixs="key_10"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="113" dir="(S)" src="SchMaster" dst="MsgDispatcher" cmd="TaskFin" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="4"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+				<key index="3" prefixs="key_10"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="114" dir="(R)" src="MsgDispatcher" dst="RcgRst" cmd="TaskFin" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="4"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+				<key index="3" prefixs="key_10"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="115" dir="(S)" src="MsgDispatcher" dst="RcgRst" cmd="TaskFin" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="4"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+				<key index="3" prefixs="key_10"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="116" dir="(R)" src="RcgRst" dst="CallBack" cmd="RcgRstFin" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="3"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="117" dir="(S)" src="RcgRst" dst="CallBack" cmd="RcgRstFin" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="3"/>
+			<keys>
+				<key index="2" prefixs="key_12"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="118" dir="(R)" src="ReCallBack" dst="HttpCaller" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="25" indexs="11" values="12" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+	<rule step="119" dir="(S)" src="ReCallBack" dst="HttpCaller" cmd="SlowInt" timeout="600000">
+		<content contentType="fix-field">
+			<eigenvalue length="25" indexs="11" values="12" />
+			<keys>
+				<key index="3" prefixs="key_11"/>
+			</keys>
+		</content>
+	</rule>
+</rules>
